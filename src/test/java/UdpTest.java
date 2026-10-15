@@ -1,8 +1,6 @@
 import org.example.UdpConnection;
 
 import java.io.IOException;
-import java.net.SocketException;
-import java.net.UnknownHostException;
 import java.util.Scanner;
 
 public class UdpTest {

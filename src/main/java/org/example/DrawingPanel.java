@@ -66,7 +66,6 @@ public class DrawingPanel  extends JPanel {
 
         Graphics2D g2 = (Graphics2D) g;
 
-        // Loop through lines and draw each one using g2.draw(...)
         for(Line2D line : lines){
             g2.draw(line);
         }

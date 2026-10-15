@@ -26,13 +26,12 @@ public class UdpConnection {
     }
 
     public String receive() throws IOException {
-        // 1. Create a byte array to hold incoming data.
         byte[] buffer = new byte[1024];
-        // 2. Create a DatagramPacket using that array.
+
         DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
-        // 3. Receive a packet through socket.
+
         socket.receive(packet);
-        // 4. Decode its contents as UTF-8 and return the text.
+
         String message = new String(
                 packet.getData(),
                 packet.getOffset(),
